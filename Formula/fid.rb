@@ -1,8 +1,8 @@
 class Fid < Formula
   desc "Terminal UI for viewing git diffs with style"
   homepage "https://github.com/3000-2/fid"
-  url "https://github.com/3000-2/fid/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "f9a6e7b57dc76687abc935e85f06848ad151c6de1e11da3a8e085b77f1293e65"
+  url "https://github.com/3000-2/fid/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "a62c35f88746c24e13304f3272f9e0dd022c42815814eb7e34a8c58eb4992cba"
   license "MIT"
 
   depends_on "oven-sh/bun/bun"
