@@ -1,8 +1,8 @@
 class Fid < Formula
   desc "Terminal UI for viewing git diffs with style"
   homepage "https://github.com/3000-2/fid"
-  url "https://github.com/3000-2/fid/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "866ca51e8156beb5fabaf89693263833192ce0632ca3958e5f532fa002536f26"
+  url "https://github.com/3000-2/fid/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "cf70615482515d404ec4dc22ca13c32b3b5eabff3be749630acc9df3ac5ae492"
   license "MIT"
 
   depends_on "oven-sh/bun/bun"
@@ -17,6 +17,6 @@ class Fid < Formula
   end
 
   test do
-    system "#{bin}/fid", "--help"
+    assert_match "Error", shell_output("#{bin}/fid --invalid 2>&1", 1)
   end
 end
